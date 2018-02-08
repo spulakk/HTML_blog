@@ -1,84 +1,32 @@
+body {
+    background: url(../src/dust_scratches.png) repeat 0 0;
+}
 
 div {
     display: block;
     padding: 5px;
 }
 
-footer {
-    padding: 5px;
-}
-
 p {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-.header {
-    text-decoration: none;
-    color: black;
-    transition: color 0.5s ease;
-}
-
-.header:hover {
-    text-decoration: none;
-    color: #99D3DF;
-    transition: color 0.5s ease;
-}
-
+/*header area*/
 header {
     background: linear-gradient(#88BBD6, cornflowerblue);
     padding-top: 8px;
     padding-bottom: 5px;
 }
 
-body {
-    background: url(src/dust_scratches.png) repeat 0 0;
-}
-
-.obr {
-    width: 18%;
-    margin-right: 0.5%;
-    padding: 0%;
-    float: left
-}
-
-.obr_last {
-    width: 18%;
-    margin: 0%;
-    padding: 0%;
-    clear: both;
-}
-
-#activeobr {
-    height: 55%;
-    width: 55%;
-}
-
-#activediv {
-    height: auto;
-    width: auto;
-}
-
-.clanky {
-    background-color: cornflowerblue;
-    border-top: 1px solid #CDCDCD;
-    border-left: 1px solid #CDCDCD;
-    border-right: 1px solid #CDCDCD;
-}
-
-.clanky_last {
-    background-color: cornflowerblue;
-    border: 1px solid #CDCDCD;
-}
-
-.clanek {
-    text-align: center;
+.headline {
+    text-decoration: none;
     color: black;
     transition: color 0.5s ease;
-    text-decoration: none;
 }
 
-.clanek:hover {
+.headline:hover {
+    text-decoration: none;
     color: #99D3DF;
     transition: color 0.5s ease;
 }
@@ -90,9 +38,75 @@ h1 {
     margin-bottom: 5px;
 }
 
-.img_container {
-    margin: 0px;
-    padding: 0px;
+/*main area*/
+.row {
+    padding: 0;
+}
+
+.left {
+    padding-left: 0;
+}
+
+.clanky {
+    background-color: cornflowerblue;
+    float: left;
+    border-bottom: solid 1px #DDDDDD;
+}
+
+.clanky_last {
+    background-color: cornflowerblue;
+    float: left;
+}
+
+.clanek {
+    text-align: center;
+    color: black;
+    transition: color 0.5s ease;
+    text-decoration: none;
+}
+
+.clanek:hover:not(.active) {
+    color: #99D3DF;
+    transition: color 0.5s ease;
+}
+
+.active {
+    color: white;
+}
+
+.active:hover {
+    color: white;
+}
+
+.obr {
+    width: 18%;
+    margin-right: 0.5%;
+    padding: 0;
+    float: left
+}
+
+.obr_last {
+    width: 18%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#activeobr {
+    height: 55%;
+    width: 55%;
+}
+
+/*footer area*/
+footer {
+    padding: 5px;
+}
+
+#autor {
+    float: left;
+    width: 40%;
+    height: 65px;
+    padding-right: 0;
 }
 
 #casDatum {
@@ -104,11 +118,4 @@ h1 {
 
 #cas, #datum {
     text-align: right;
-}
-
-#autor {
-    float: left;
-    width: 40%;
-    height: 65px;
-    padding-right: 0;
 }
